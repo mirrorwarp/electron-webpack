@@ -1,5 +1,5 @@
 import * as path from "path"
-import { BannerPlugin, DefinePlugin } from "webpack"
+import { DefinePlugin } from "webpack"
 import { WebpackConfigurator } from "../main"
 import { getFirstExistingFile } from "../util"
 import { BaseTarget, configureFileLoader } from "./BaseTarget"

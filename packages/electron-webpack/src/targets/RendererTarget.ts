@@ -211,8 +211,6 @@ async function generateIndexFile(configurator: WebpackConfigurator, nodeModulePa
     html = html.replace("</head>", `<title>${title}</title></head>`)
   }
 
-  html = html.replace("</head>", '<script>require("source-map-support/source-map-support.js").install()</script></head>')
-
   if (scripts.length) {
     html = html.replace("</head>", `${scripts.join("")}</head>`)
   }
